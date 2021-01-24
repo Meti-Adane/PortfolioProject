@@ -78,3 +78,111 @@ section.blog .blog-container h5 {
   font-style: italic;
   color: gray;
 }
+
+section.gallery img {
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  background-color: black;
+  color: gray;
+  position: a;
+  bottom: 0;
+  left: 0;
+}
+footer a {
+  text-decoration: none;
+  color: gray;
+}
+footer a:hover {
+  color: white;
+}
+footer .rowme {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+footer .rowme .col-large-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding-top: 5px;
+  padding-left: 40px;
+  float: left;
+}
+footer .rowme .col-large-1 .col {
+  width: 25%;
+}
+footer .rowme .col-large-1 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer .rowme .col-large-1 ul li {
+  display: block;
+}
+footer .rowme .col-large-2 {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 40px;
+  border-left: 2px solid gray;
+}
+footer .rowme .col-large-2 .col-left {
+  width: 30%;
+}
+footer .rowme .col-large-2 .col-left .social-icon {
+  padding-top: 20px;
+  text-align: center;
+}
+footer .rowme .col-large-2 .col-right {
+  width: 80%;
+  padding-left: 10px;
+}
+footer .rowme .col-large-2 .samsung {
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 7%;
+  width: -webkit-max-content;
+  width: max-content;
+}
+footer .rowme .col-large-2 .samsung .fa {
+  color: green;
+}
+footer .rowme .col-large-2 .apple {
+  text-align: left;
+  padding: 5px;
+  margin-top: 15px;
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 7%;
+  width: -webkit-max-content;
+  width: max-content;
+}
+footer .rowme .col-large-2 .apple .fa {
+  color: white;
+}
+footer .rowme .col-large-2 form input {
+  width: 80%;
+  padding-right: 0;
+  margin-right: 0;
+}
+footer .rowme .col-large-2 form span {
+  margin-left: 0;
+  padding-left: 0;
+}
+footer .rowme h3 {
+  text-transform: capitalize;
+  color: white;
+}
+footer .rowno {
+  width: 100%;
+  padding-left: 40px;
+}
+footer .rowno h6 {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
