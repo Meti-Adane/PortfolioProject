@@ -9,6 +9,14 @@ body {
   color: red;
   font-size: 3rem;
   text-shadow: 2px 2px black;
+  
+}
+.container .bird {
+  position: fixed;
+  left: 2%;
+  top: 10%;
+  z-index: 1;
+  height: 20%;
 }
 .container .cow {
   position: fixed;
@@ -26,10 +34,25 @@ body {
 }
 .container .tree{
     position: fixed;
-    right: 10%;
-    bottom: 10%;
+    right: 20%;
+    bottom: 13%;
     z-index: 4;
 
+}
+.container .sun{
+  position: fixed;
+  right: 8%;
+  top: 5%;
+  height: 30%;
+  z-index: 0;
+
+}
+.container .tracktor{
+  position: fixed;
+  left:80%;
+  bottom: 24%;
+  height: 20%;
+  z-index: 0;
 }
 .container .footer {
   position: fixed;
