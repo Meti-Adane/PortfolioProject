@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-flex-layout-vs-grid-layout</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+</head>
+<body>
+    <nav>
+        <div class="title">Blogs</div>
+        <ul>
+            <!-- <li class="dropdownIcon"><a href="">&#9776</a></li> -->
+            <li><a class="" href="#">Home</a></li>
+            <li><a class="" href="#">My Work</a></li>
+            <li><a class="" href="#">Blog</a></li>
+            <li><a class="" href="#">Gallery</a></li>
+            <li><a class="" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main-blog-text">
+        <h2>Flex layout vs Grid layout</h2>
+        <p>
+            The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
+    <h3>One dimensional vs two dimensional </h3>
+    flexbox is one-dimensional, while CSS Grid is two-dimensional. Flexbox lays out items along either  on the horizontal or the vertical axis. 
+    It is most suitable for arranging elements in either a single row, or a single column. 
+    <br>
+    On the other hand, CSS Grid lets you work along two axes: horizontally and vertically. Grid allows you to declare the sizing of rows and columns and then explicitly place things into both rows and columns as needed. Grid is most suitable for arranging elements in multiple rows and columns.
+    <h3>Flex wrap vs grid wrap</h3> 
+    <p>
+    The beauty of Grid and Flexbox lies in the ability to stretch and squeeze the items based on the amount of space available. Flexbox achieves this using <a href="" target="__blank">flex-grow</a> and <a href="" target="__blank">flex-shrink</a> properties, and Grid achieves this using a combination of minmax and auto-fill functions inside the <a href="" target="__blank">grid-template-columns</a>property.
+</p>
+    <br>
+    While flexbox can make rows and columns in the sense that it allows elements to wrap, there’s no way to declaratively control where elements end up since the elements merely push along a single axis and then wrap or not wrap accordingly. 
+    <br>
+    Additionally, in flexbox, everything is placed along a one-dimensional plane and it’s because of the single dimension property that we can do things like aligning elements along a baseline — which is something grid is unable to do.
+
+    <h3>Overlapping items in Flexbox vs Grid</h3>
+    <p>
+    Getting elements to overlap in flexbox requires considering negative margins, transforms, or absolute positioning in order to break out of the flex behavior. With grid, we can place items on overlapping grid lines, or even right within the same exact grid cells.
+    <h3>Grid is Container-Based, Flexbox is Content-Based</h3>
+    In flexbox layout, the size of a cell (flex-item) is defined inside the flex-item itself, and in the grid layout, the size of a cell (grid-item) is defined inside the grid-container. flexbox layout is calculated after its content is loaded whereas the grid layout is calculated regardless of the content inside it. It is not recommended to use flexbox to build the overall layout of a website.
+</p>
+    <h3>Grid Has a “Gap” Property, Flexbox Doesn’t</h3>
+    <p>
+    we can create gutters between <a href="" target="__blank">grid-items</a> using <a href="" target="__blank">grid-column-gap</a> in contrast In order to achieve the same result in flexbox we would have to use padding and nested containers, or increase the width of the flex-container and use the <a href="" target="__blank">justify-content</a> property to spread the <a href="" target="__blank">flex-items</a>.
+    </p>
+    In other terms, We have to take an indirect route in flexbox because it doesn’t have a gap property.
+    
+    <h3>Browser support</h3>
+    Flexbox has fairly good browser support, while CSS Grid is not supported by IE11- and Edge 15-.
+    <br>
+    <br>
+    <br> 
+    Last but not least Grid is mostly defined on the parent element. wheras, In flexbox, most of the layouts (beyond the very basics) happen on the children. 
+    
+    The images below show how layout are defined in grid layout and flex layout consecutively 
+    <div class="imgs">
+    <img src="./assets/img/grid.png" alt="" id="grid-img">
+    <caption>Layout defination in grid layout</caption>
+    <br>
+    <br>
+    <img src="./assets/img/flex.png" alt="" id="flex-img">
+    <caption>Layout defination in flex layout</caption>
+    </div>
+
+        </p>
+        <br>
+        <h5 class="breaker">Other blogs</h5>
+        <section class="blogs" id="blog">
+            <div class="blog-title"><h2>My blogs</h2></div>
+            <div class="blog">
+                <a href="./pseudo-elements_&_classes.html" target="_blank" rel="noopener noreferrer">
+                <div class="blog-container">
+                    <div class="blog-img">
+                        <img src="https://s1.dmcdn.net/v/ARh3s1Lb1HoVCqePy/x240" alt="" srcset="">
+                    </div>
+                    <h3>Pseudo-classes vs Pseudo-elements</h3>
+                    <h5 class="date">Jan 22 2021</h5>
+                    <div class="snippet">
+                        A pseudo-element is a 'fake' element, it isn't really in the document with the 'real' ones. Pseudo-classes are like 'fake' classes that are applied to elements under certain conditions...
+                    </div>
+                </div>
+            </a>
+                <a href="./gridLayout.html" target="_blank" rel="noopener noreferrer">
+                <div class="blog-container">
+                    <div class="blog-img">
+                        <img src="https://bryanlrobinson.com/images/grid-comparison.jpg" alt="" srcset="">
+                    </div>
+                    <h3>Css Grid Layout</h3>
+                    <h5 class="date">Jan 22 2021</h5>
+                    <div class="snippet">
+                        A grid layout is created by declaring display: grid or display: inline-grid on a grid container element. As soon as we do this, all direct children of that element become grid items. All components in the layout are given equal size....
+                    </div>
+                </div>
+                </a>
+            </div>
+    
+        </section>
+    </div>
+    <footer>
+        <div class="rowme">
+            <div class="col-large-1">
+                <div class="col">                
+                    <h3>My Works</h3>
+                    <ul>
+                        <li><a href="#">Farm Party</a></li>
+                        <li><a href="#">Calculator</a></li>
+                        <li><a href="#">Blog page</a></li>
+                        <li><a href="#">Personal website</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Blog</h3>
+                    <ul>
+                        <li><a href="#">Css flex layout</a></li>
+                        <li><a href="#">Css grid layout</a></li>
+                        <li><a href="#">Pseudo elements </a></li>
+                        <li><a href="#">Pseudo classes</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Contact Me</h3>
+                    
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Email</a></li>                        
+                        <li><a href="#">Facebbok</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                <h3>contact</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-large-2">
+                <div class="col-left">
+                    
+                    <a href="#"><div class="apple icon"><i class="fa fa-apple"></i> App Store </div></a>
+                    <a href="#"><div class="samsung icon"><i class="fa fa-google"></i> Play Store</div></a>
+                    <div class="social-icon">
+                    <a href="#"><span class="icon"><i class="fa fa-facebook"></i></span></a>
+                    <a href="#"><span><i class="fa fa-twitter"></i></span></a>
+                    <a href="#"><span><i class="fa fa-linkedin"></i></span></a>
+                </div>
+                </div>
+                <div class="col-right">
+                    <h3>Subscribe to my news letter</h3>
+                    <form action="POST">
+                        <input type="text" placeholder="Email address">
+                        <span><button>✔</button></span>
+                    </form>
+                    <h5>Subscribe to my news letter to get up to date tech and programming related news daily 🙂!</h5>
+                </div>
+            </div>
+        </div>
+        <div class="rowno">
+            
+            <h6>Meti Adane Programmer | Designer | Mentor </h6>
+            <h6>Meti-Adane&copy;2021</h6>
+        </div>
+    </footer>
+</body>
+</html>
