@@ -12,6 +12,9 @@
     padding-left: 0.75em !important; 
     padding-right: 0.75em !important;
 }
+.main-blog-text a{
+    color: #230129;
+}
 ul{
     list-style: disc;
 }
@@ -97,6 +100,7 @@ section.blogs .blog {
     padding: 0em 2em !important;
     font-size: 0.9em !important;
     text-align: justify !important;
+    
   }
   
   section.blogs .blog .blog-container .blog-img img {

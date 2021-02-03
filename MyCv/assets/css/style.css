@@ -282,7 +282,7 @@ section.gallery .hexagon-gallery .hex:hover {
 }
 
 input[type="text"]:active{
-  /* border: none; */
+  border: none;
   /* background-color: rgba(17, 17, 17, 0); */
 }
 
@@ -360,7 +360,7 @@ footer .rowme .col-large-1 ul li {
   display: block;
 }
 footer .rowme .col-large-2 {
-  width: 40%;
+  /* width: 40%; */
   display: flex;
   justify-content: space-between;
   padding-top: 5px;
